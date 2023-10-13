@@ -1,8 +1,10 @@
 const math = require('mathjs');
 const { EmbedBuilder } = require('discord.js');
 const functions = require('./functions/function');
+const events = require('events');
 
-module.exports = async (options) => {
+module.exports = class Calculator extends events {  
+  constructor(options = {}) {
 
 	if (!options.message) {
 		throw new Error(' Error: message argument was not specified.');
@@ -226,4 +228,5 @@ module.exports = async (options) => {
 				}
 			});
 		});
+					   };
 };
