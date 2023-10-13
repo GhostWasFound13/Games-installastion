@@ -1,6 +1,6 @@
 const math = require('mathjs');
 const { EmbedBuilder } = require('discord.js');
-const functions = require('../../functions/function');
+const functions = require('./functions/function');
 
 module.exports = async (options) => {
 
