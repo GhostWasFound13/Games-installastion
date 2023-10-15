@@ -3,8 +3,7 @@ const { EmbedBuilder } = require('discord.js');
 const functions = require('./functions/function');
 const events = require('events');
 
-module.exports = class Calculator extends events {  
-  constructor(options = {}) {
+module.exports = async (options) => {
 
 	if (!options.message) {
 		throw new Error(' Error: message argument was not specified.');
